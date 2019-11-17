@@ -1,0 +1,243 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    line-height: 1.7;
+    color: #ffff;
+    text-align: center;
+    background-color: #343233;
+}
+
+.navigation__link {
+    font-size: 3vh;
+    color: #e0c290;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+
+}
+
+.navigation__item {
+    list-style-type: none;
+    padding: 5vh;
+    letter-spacing: 2vh;
+    border: 1px solid #e0c390;
+    margin-top: 15px;
+    padding: 2vh 6vh;
+    transition: all 0.5s;
+
+}
+
+
+#subject_assignment,#subject_papers,#subject_books {
+    display: none;
+}
+
+
+.logo {
+    font-size: 50px;
+    color: #efdab9;
+    font-family: 'Righteous', cursive;
+    backface-visibility: hidden;
+}
+
+.ye-logo {
+    font-size: 50vh;
+    animation-delay: .9s;
+    transition: all 1s;
+    display: inline-flex;
+}
+
+.div-logo {
+    display: none;
+    backface-visibility: hidden;
+    font-size: 10vh;
+}
+
+.header_animation {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.navigation__nav {
+    display: none;
+    align-content: center;
+    margin-left: -4ch;
+
+}
+
+.navigation__item:hover,.navigation__item:active{
+    background-color: #e0c390;
+    border: 2px dashed #343233 ;
+    cursor: pointer;
+
+}
+
+.navigation__item:hover > .navigation__link{
+    color: #343233;
+
+}
+.navigation__item:active>.navigation__link{
+    color: #343233;
+}
+
+/* nav down */
+.subject_name {
+    color: #e0c390;
+    padding: center;
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'pacfont';
+    letter-spacing: 2px;
+}
+
+.filesPdf{
+    color: #e0c390;
+    text-decoration: none;
+    font-size: 3vh;
+    font-family: 'Righteous', cursive;
+}
+
+/*  Background Image */
+
+@font-face {
+    font-family: 'pacfont';
+    src: url('PAC-FONT.TTF');
+}
+hr.type_3 {
+    border: 0;
+    width: 100%;
+    height: 25px;
+    display: block;
+    margin: 30px auto;
+    background:url(type_3.png)  center top; 
+}
+
+.box_idk{
+    margin-top:5px;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    line-height: 1.7;
+    color: #ffff;
+    text-align: center;
+    background-color: #343233;
+}
+
+
+
+
+
+.navigation__link {
+    font-size: 3vh;
+    color: #e0c290;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+
+}
+
+.navigation__item {
+    list-style-type: none;
+    padding: 5vh;
+    letter-spacing: 2vh;
+    border: 1px solid #e0c390;
+    margin-top: 15px;
+    padding: 2vh 6vh;
+    transition: all 0.5s;
+
+}
+
+
+#subject_assignment,#subject_papers,#subject_books {
+    display: none;
+}
+
+
+.logo {
+    font-size: 50px;
+    color: #efdab9;
+    font-family: 'Righteous', cursive;
+    backface-visibility: hidden;
+}
+
+.ye-logo {
+    font-size: 50vh;
+    animation-delay: .9s;
+    transition: all 1s;
+    display: inline-flex;
+}
+
+.div-logo {
+    display: none;
+    backface-visibility: hidden;
+    font-size: 9vh;
+}
+
+.header_animation {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.navigation__nav {
+    display: none;
+    align-content: center;
+    margin-left: -4ch;
+
+}
+
+.navigation__item:hover,.navigation__item:active{
+    background-color: #e0c390;
+    border: 2px dashed #343233 ;
+    cursor: pointer;
+
+}
+
+.navigation__item:hover > .navigation__link{
+    color: #343233;
+
+}
+.navigation__item:active>.navigation__link{
+    color: #343233;
+}
+
+/* nav down */
+.subject_name {
+    color: #e0c390;;
+    padding: center;
+    text-align: center;
+    font-size: 5vh;
+    font-family: 'pacfont';
+    letter-spacing: 2px;
+    overflow-wrap: break-word;
+}
+
+.filesPdf{
+    color: #e2a832;
+    text-decoration: none;
+    font-size: 5vh;
+    font-family: 'Righteous', cursive;
+}
+
+/*  Background Image */
+
+@font-face {
+    font-family: 'pacfont';
+    src: url('PAC-FONT.TTF');
+}
+hr.type_3 {
+    border: 0;
+    width: 100%;
+    height: 25px;
+    display: block;
+    margin: 30px auto;
+    background:url(type_3.png)  center top; 
+}
+
+.box_idk{
+    margin-top:5px;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137030325-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137030325-1');
+    </script>
+
+    <title>Yedivision</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+    <script type="text/javascript" src="{{url_for('static',filename='index.js')}}"></script>
+
+</head>
+
+<body onload="myanimation()">
+
+    <header class="header_animation" onclick="mybackfunction()">
+        <span id="id01" class="logo ye-logo">A</span><span id="id02" class="logo div-logo">division</span>
+    </header>
+
+
+    <div id="navigationhome">
+
+        <nav class="navigation__nav" id="nav_block">
+            <ul class="navigation__list">
+                <li class="navigation__item" onclick="assignmentFun()">
+                    <div class="navigation__link">PAPERWORK</div>
+                </li>
+                <li class="navigation__item" onclick="papersFun()">
+                    <div class="navigation__link">PAPERS</div>
+                </li>
+                <li class="navigation__item" onclick="booksFun()">
+                    <div class="navigation__link">BOOKS</div>
+                </li>
+                <li class="navigation__item"><a href="http://mydy.dypatil.edu/" class="navigation__link">LMS</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div id="subject_assignment">
+        <div class="goback" style="margin: 0px; font-size:12px;">click yedivision to go back</div>
+        {% for i in range(0,(posts['subject_list'])|length)%}
+        <hr class="type_3">
+
+        <div class="subject_name">{{posts['subject_list'][i]}}</div>
+        {% for post in posts['result']%}
+        {% if posts['result'][post]['subjectname']==i %}
+        <div class="box_idk"><a target="_blank" href="{{posts['result'][post]['link']}}" class="filesPdf">{{posts['result'][post]['name']}}</a></div>
+        {% endif%}
+        {% endfor %}
+        {% endfor %}
+    </div>
+
+    <div id="subject_papers">
+        <div class="goback" style="margin: 0px; font-size:12px;">click yedivision to go back</div>
+        {% for i in range(0,(posts['subject_list'])|length)%}
+        <hr class="type_3">
+
+        <div class="subject_name">{{posts['subject_list'][i]}}</div>
+        {% for post in posts['result1']%}
+        {% if posts['result1'][post]['subjectname']==i %}
+        <div class="box_idk"><a target="_blank" href="{{posts['result1'][post]['link']}}" class="filesPdf">{{posts['result1'][post]['name']}}</a></div>
+        {% endif%}
+        {% endfor %}
+        {% endfor %}
+    </div>
+
+    <div id="subject_books">
+        <div class="goback" style="margin: 0px; font-size:12px;">click yedivision to go back</div>
+        {% for i in range(0,(posts['subject_list'])|length)%}
+        <hr class="type_3">
+
+        <div class="subject_name">{{posts['subject_list'][i]}}</div>
+        {% for post in posts['result2']%}
+        {% if posts['result2'][post]['subjectname']==i %}
+        <div class="box_idk"><a target="_blank" href="{{posts['result2'][post]['link']}}" class="filesPdf">{{posts['result2'][post]['name']}}</a></div>
+        {% endif%}
+        {% endfor %}
+        {% endfor %}
+    </div>
+
+
+</body>
+
+
+</html>

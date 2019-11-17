@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>duolingo:"time to do something"</title>
+    <!-- <link rel="shortcut icon" type="image/png" href="static/yetitle.png"/> -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137030325-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137030325-1');
+    </script>
+    <link rel="stylesheet" href="../static/normalize.css">
+    <link rel="stylesheet" href="../static/skeleton.css">
+    <link rel="stylesheet" href="../static/custom.css">
+</head>
+
+<body>
+
+    <div id="content">
+        <div class="container">
+            <h2>\---UwU---/</h2>
+            <h6>duolingo bird reminder</h6>
+            <div class="row">
+                <div class="six columns">
+                    <label for="tweet">TYPE:</label>
+                    <form action="#" id="form">
+                        <label for="tweet"></label>
+                        <textarea id="tweet" class="u-full-width"></textarea>
+                        <input type="submit" class="button u-full-width button-primary" value="save your life">
+                    </form>
+                </div>
+                <!--.six-->
+                <div class="six columns">
+                    <h2>TO DO LIST</h2>
+                    <div id="tweet-list"></div>
+                </div>
+                <!--.six-->
+            </div>
+        </div>
+    </div>
+    <!--#contenido-->
+
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
