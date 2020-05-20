@@ -3,7 +3,7 @@ Flask==1.0.2
 gcloud==0.17.0
 googleapis-common-protos==1.5.8
 gunicorn==19.9.0
-httplib2==0.12.1
+httplib2==0.18.0
 itsdangerous==1.1.0
 Jinja2==2.10
 jws==0.1.3
